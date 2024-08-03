@@ -1,0 +1,168 @@
+/* Universal Styles */
+
+html {
+  color: #333;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+}
+.center {
+  text-align: center;
+}
+.Englebert {
+  font-family: "Englebert", sans-serif;
+}
+.Inter {
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  max-width: 50%;
+}
+button:hover {
+  background-color: white;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+/* Alert Bar */
+.global-alert {
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 50;
+}
+.global-alert ._text {
+  color: red;
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+/* NAV */
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 1rem;
+  background-color: #333;
+}
+@media screen and (max-width: 357px) {
+  header,
+  footer {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    height: 20rem;
+    background-color: aqua;
+   
+  }
+}
+
+.logo-text {
+  font-family: "Englebert", sans-serif;
+  font-size: 3rem;
+  color: white;
+  font-weight: bolder;
+}
+header li,
+footer li {
+  display: inline-block;
+  padding-left: 1rem;
+  color: white;
+}
+header li a {
+  text-decoration: none;
+  color: white;
+}
+header li a:hover {
+  background-color: white;
+  color: #333;
+  font-size: 1.25rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+/* Banner */
+.banner {
+  background-image: url("./images/banner.jpg");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0.7;
+}
+@media screen and (max-width: 820px) {
+  .banner {
+    height: 820px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+.text-box {
+  width: 40rem;
+  height: 20rem;
+  background: whitesmoke;
+  border: solid;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* summary */
+.summary {
+  font-size: 2rem;
+}
+/* photos */
+.photos-after-summary img {
+  max-width: 33%;
+}
+.photos-after-summary {
+  display: flex;
+  justify-content: space-around;
+}
+/* testimonials */
+.testimonial {
+  font-size: 1.5rem;
+}
+/* photos */
+.photos-after-testimonial img {
+  max-width: 45%;
+}
+.photos-after-testimonial {
+  display: flex;
+  justify-content: space-around;
+}
+/* meetup */
+.meetup {
+  background-image: url("./images/meetup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 820px;
+}
+.meetup h1 {
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+/* footer */
